@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+</header>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Menu.html">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Main Content</h2>
+        <p>Espaço reservado para um artigo no conteudo principal</p>
+     <section class="section section1">
+        <div class="imagem">
+                <img src="Sampa3.jpeg" alt="Sampa1" id="next"><br>
+                <button onclick="alterar()">Alterar</button>
+        </div>
+     </section>
+     <hr>
+     <section class="section section2">
+        <h2>Section 2</h2>
+    <p>Espaço reservado para sesao 2</p>
+     </section>
+    </main>
+    <aside>
+        <h2>Tópico</h2>
+        <ul>
+            <li class="menu-item-aside"><a href="#1">Tópico 1</a></li>
+            <li class="menu-item-aside"><a href="#1">Tópico 2</a></li>
+            <li class="menu-item-aside"><a href="#1">Tópico 3</a></li>
+        </ul>
+           
+        <h2>Links Importantes</h2>
+            <ul>
+                <li class="menu-item-aside"><a href="http://www.google.com.br" target="_blank" rel="noopener noreferrer">Google</a></li>
+                <li class="menu-item-aside"><a href="http://youtube.com.br" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                <li class="menu-item-aside"><a href="https://bioparkeducacao.com/" target="_blank" rel="noopener noreferrer">Biopark</a></li>
+            </ul>
+
+    </aside>
+    <footer>
+        <h2>Footer</h2>
+        <p>This is the footer of the page.</p>
+    </footer>
+</body>
+<script>
+    function alterar() {
+        const image= document.getElementById("next")
+        if(image.src.match("Sampa3.jpeg")){
+            image.src = "Sampa2.jpeg" 
+        } else {
+            image.src = "Sampa3.jpeg"
+        }
+    }
+</script>
+
+</html>
